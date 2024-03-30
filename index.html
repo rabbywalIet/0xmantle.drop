@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en" style="--wcm-color-fg-1: rgb(228,231,231); --wcm-color-fg-2: rgb(148,158,158); --wcm-color-fg-3: rgb(110,119,119); --wcm-color-bg-1: rgb(20,20,20); --wcm-color-bg-2: rgb(39,42,42); --wcm-color-bg-3: rgb(59,64,64); --wcm-color-overlay: rgba(255,255,255,0.1); --wcm-accent-color: #FFEA31; --wcm-accent-fill-color: #000; --wcm-z-index: 2000; --wcm-background-color: #FFEA31; --wcm-background-border-radius: 8px; --wcm-container-border-radius: 30px; --wcm-wallet-icon-border-radius: 15px; --wcm-wallet-icon-large-border-radius: 30px; --wcm-wallet-icon-small-border-radius: 7px; --wcm-input-border-radius: 28px; --wcm-button-border-radius: 10px; --wcm-notification-border-radius: 36px; --wcm-secondary-button-border-radius: 28px; --wcm-icon-button-border-radius: 50%; --wcm-button-hover-highlight-border-radius: 10px; --wcm-text-big-bold-size: 20px; --wcm-text-big-bold-weight: 600; --wcm-text-big-bold-line-height: 24px; --wcm-text-big-bold-letter-spacing: -0.03em; --wcm-text-big-bold-text-transform: none; --wcm-text-xsmall-bold-size: 10px; --wcm-text-xsmall-bold-weight: 700; --wcm-text-xsmall-bold-line-height: 12px; --wcm-text-xsmall-bold-letter-spacing: 0.02em; --wcm-text-xsmall-bold-text-transform: uppercase; --wcm-text-xsmall-regular-size: 12px; --wcm-text-xsmall-regular-weight: 600; --wcm-text-xsmall-regular-line-height: 14px; --wcm-text-xsmall-regular-letter-spacing: -0.03em; --wcm-text-xsmall-regular-text-transform: none; --wcm-text-small-thin-size: 14px; --wcm-text-small-thin-weight: 500; --wcm-text-small-thin-line-height: 16px; --wcm-text-small-thin-letter-spacing: -0.03em; --wcm-text-small-thin-text-transform: none; --wcm-text-small-regular-size: 14px; --wcm-text-small-regular-weight: 600; --wcm-text-small-regular-line-height: 16px; --wcm-text-small-regular-letter-spacing: -0.03em; --wcm-text-small-regular-text-transform: none; --wcm-text-medium-regular-size: 16px; --wcm-text-medium-regular-weight: 600; --wcm-text-medium-regular-line-height: 20px; --wcm-text-medium-regular-letter-spacing: -0.03em; --wcm-text-medium-regular-text-transform: none; --wcm-font-family: GT Walsheim Pro, Roboto, sans-serif; --wcm-font-feature-settings: 'tnum' on, 'lnum' on, 'case' on; --wcm-success-color: rgb(38,181,98); --wcm-error-color: rgb(242, 90, 103); --wcm-overlay-background-color: rgba(0, 0, 0, 0.3); --wcm-overlay-backdrop-filter: none;" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bdcffcd6f60514cc.css" data-precedence="next">
+    <link rel="stylesheet" href="688337a0fd7b5778.css" data-precedence="next">
+    <title>Claim Rewards for Mantle Journey</title>
+    <meta name="description" content="Claim $MNT for Mantle Journey Season Alpha. Mantle Journey is an open-access and performance-based program designed to reward users and applications.">
+    <meta property="og:title" content="Claim Rewards for Mantle Journey">
+    <meta property="og:description" content="Claim $MNT for Mantle Journey Season Alpha. Mantle Journey is an open-access and performance-based program designed to reward users and applications.">
+    <meta property="og:url" content="https://journey.mantle.xyz">
+    <meta property="og:site_name" content="Mantle Journey">
+    <meta property="og:image" content="https://mdi-quests-mdi-quests-7a3na52bv-mantle-sandbox.vercel.app/_next/static/media/mantle-journey-mnt-rewards.63bc59e1.jpg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="418">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site:id" content="1592468786489212928">
+    <meta name="twitter:creator" content="@0xMantle">
+    <meta name="twitter:creator:id" content="1592468786489212928">
+    <meta name="twitter:title" content="Claim Rewards for Mantle Journey">
+    <meta name="twitter:description" content="Claim $MNT for Mantle Journey Season Alpha. Mantle Journey is an open-access and performance-based program designed to reward users and applications.">
+    <meta name="twitter:image" content="https://mdi-quests-mdi-quests-7a3na52bv-mantle-sandbox.vercel.app/_next/static/media/mantle-journey-mnt-rewards.63bc59e1.jpg">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="48x48">
+    <style data-emotion="css-global" data-s="">
+        html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;box-sizing:border-box;-webkit-text-size-adjust:100%;}*,*::before,*::after{box-sizing:inherit;}strong,b{font-weight:700;}body{margin:0;color:#fff;font-family:Suisse Intl,sans-serif;font-weight:400;font-size:1rem;line-height:1.5;background-color:#121212;}@media print{body{background-color:#fff;}}body::backdrop{background-color:#121212;}
+    </style>
+    <style data-emotion="css 1aqh5rx" data-s="">
+        @media print{.css-1aqh5rx{position:absolute!important;}}.css-1aqh5rx .MuiPaper-root{max-width:720px;background:#131313;}
+    </style>
+    <style data-emotion="css 24nxrh" data-s="">
+        .css-24nxrh{position:fixed;z-index:10;}@media (min-width:0px){.css-24nxrh{top:16px;left:24px;right:24px;}}@media (min-width:900px){.css-24nxrh{top:32px;left:16px;right:16px;}}@media (min-width:1200px){.css-24nxrh{left:64px;right:64px;}}
+    </style>
+    <style data-emotion="css 4oqj2c" data-s="">
+        .css-4oqj2c{width:100%;margin-left:auto;box-sizing:border-box;margin-right:auto;display:block;padding-left:16px;padding-right:16px;padding-left:10px;padding-right:10px;}@media (min-width:600px){.css-4oqj2c{padding-left:24px;padding-right:24px;}}@media (min-width:1536px){.css-4oqj2c{max-width:1536px;}}
+    </style>
+    <style data-emotion="css j7qwjs" data-s="">
+        .css-j7qwjs{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}
+    </style>
+    <style data-emotion="css wolfa4" data-s="">
+        .css-wolfa4{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;height:60px;box-sizing:border-box;padding-top:10px;padding-bottom:10px;padding-left:10px;border-radius:30px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;background:rgba(0, 0, 0, 0.50);-webkit-backdrop-filter:blur(25px);backdrop-filter:blur(25px);}@media (min-width:0px){.css-wolfa4{padding-right:20px;}}@media (min-width:900px){.css-wolfa4{padding-right:10px;}}
+    </style>
+    <style data-emotion="css m9scfr" data-s="">
+        .css-m9scfr{color:inherit;-webkit-text-decoration:none;text-decoration:none;width:40px;height:40px;}
+    </style>
+    <style data-emotion="css 176os0s" data-s="">
+        .css-176os0s{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.css-176os0s>:not(style)~:not(style){margin:0;margin-left:32px;}
+    </style>
+    <style data-emotion="css 13tqxrv" data-s="">
+        @media (min-width:0px){.css-13tqxrv{display:none;}}@media (min-width:900px){.css-13tqxrv{display:block;}}
+    </style>
+    <style data-emotion="css 1unrqcp" data-s="">
+        .css-1unrqcp{color:inherit;-webkit-text-decoration:none;text-decoration:none;}
+    </style>
+    <style data-emotion="css ct9q29" data-s="">
+        .css-ct9q29{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:4px;}
+    </style>
+    <style data-emotion="css 1mdqcah" data-s="">
+        .css-1mdqcah{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-size:1.5rem;color:#FFFFFF80;}
+    </style>
+    <style data-emotion="css 1rovoja" data-s="">
+        .css-1rovoja{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:8px;margin-left:-12px;}
+    </style>
+    <style data-emotion="css dujs6f" data-s="">
+        .css-dujs6f{margin:0;font-family:Suisse Intl,sans-serif;font-weight:400;font-size:1rem;line-height:1.5;}
+    </style>
+    <style data-emotion="css xq0ggo" data-s="">
+        .css-xq0ggo{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}@media (min-width:0px){.css-xq0ggo{display:none;}}@media (min-width:900px){.css-xq0ggo{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}
+    </style>
+    <style data-emotion="css 1vigflz" data-s="">
+        .css-1vigflz{font-family:Suisse Intl,sans-serif;font-weight:500;font-size:0.875rem;line-height:1.75;text-transform:uppercase;min-width:64px;padding:6px 16px;border-radius:4px;-webkit-transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;color:rgba(0, 0, 0, 0.87);background-color:#FFEA31;box-shadow:0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);border-radius:100px;height:40px;text-transform:capitalize;font-weight:450;}.css-1vigflz:hover{-webkit-text-decoration:none;text-decoration:none;background-color:rgb(178, 163, 34);box-shadow:0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);}@media (hover: none){.css-1vigflz:hover{background-color:#FFEA31;}}.css-1vigflz:active{box-shadow:0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);}.css-1vigflz.Mui-focusVisible{box-shadow:0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);}.css-1vigflz.Mui-disabled{color:rgba(255, 255, 255, 0.3);box-shadow:none;background-color:rgba(255, 255, 255, 0.12);}
+    </style>
+    <style data-emotion="css 14za61a" data-s="">
+        .css-14za61a{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;background-color:transparent;outline:0;border:0;margin:0;border-radius:0;padding:0;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;-moz-appearance:none;-webkit-appearance:none;-webkit-text-decoration:none;text-decoration:none;color:inherit;font-family:Suisse Intl,sans-serif!important;font-family:Suisse Intl,sans-serif;font-weight:500;font-size:0.875rem;line-height:1.75;text-transform:uppercase;min-width:64px;padding:6px 16px;border-radius:4px;-webkit-transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;color:rgba(0, 0, 0, 0.87);background-color:#FFEA31;box-shadow:0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);border-radius:100px;height:40px;text-transform:capitalize;font-weight:450;}.css-14za61a::-moz-focus-inner{border-style:none;}.css-14za61a.Mui-disabled{pointer-events:none;cursor:default;}@media print{.css-14za61a{-webkit-print-color-adjust:exact;color-adjust:exact;}}.css-14za61a:hover{-webkit-text-decoration:none;text-decoration:none;background-color:rgb(178, 163, 34);box-shadow:0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);}@media (hover: none){.css-14za61a:hover{background-color:#FFEA31;}}.css-14za61a:active{box-shadow:0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);}.css-14za61a.Mui-focusVisible{box-shadow:0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);}.css-14za61a.Mui-disabled{color:rgba(255, 255, 255, 0.3);box-shadow:none;background-color:rgba(255, 255, 255, 0.12);}
+    </style>
+    <style data-emotion="css 1txgs6v" data-s="">
+        .css-1txgs6v{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.css-1txgs6v>:not(style)~:not(style){margin:0;margin-left:16px;}@media (min-width:0px){.css-1txgs6v{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}@media (min-width:900px){.css-1txgs6v{display:none;}}
+    </style>
+    <style data-emotion="css 1k371a6" data-s="">
+        @media print{.css-1k371a6{position:absolute!important;}}
+    </style>
+    <style data-emotion="css j7qwjs" data-s="">
+        .css-j7qwjs{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}
+    </style>
+    <style data-emotion="css 1lqhqb3" data-s="">
+        .css-1lqhqb3{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:start;-ms-flex-pack:start;-webkit-justify-content:flex-start;justify-content:flex-start;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:40px;position:relative;z-index:2;aspect-ratio:1.5103338632750398;min-height:1200px;max-height:1500px;background-image:url(
+                                "reward-claim-pc-banner.6ce5ba1d.png");-webkit-background-size:cover;background-size:cover;background-repeat:no-repeat;-webkit-background-position:bottom;background-position:bottom;padding-top:150px;}
+    </style>
+    <style data-emotion="css dvxtzn" data-s="">
+        .css-dvxtzn{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+    </style>
+    <style data-emotion="css ek4pxa" data-s="">
+        .css-ek4pxa{text-align:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;gap:16px;}
+    </style>
+    <style data-emotion="css oagv82" data-s="">
+        .css-oagv82{margin:0;font-family:Suisse Intl,sans-serif;font-weight:400;font-size:1rem;line-height:1.5;font-size:40px;font-weight:700;line-height:48px;}
+    </style>
+    <style data-emotion="css fxkca9" data-s="">
+        .css-fxkca9{margin:0;font-family:Suisse Intl,sans-serif;font-weight:400;font-size:1rem;line-height:1.5;font-size:24px;font-weight:600;}
+    </style>
+    <style data-emotion="css p7eyo4" data-s="">
+        .css-p7eyo4{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:740px;padding:14px 30px;border-radius:16px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;gap:14px;margin-top:28px;background:linear-gradient(94deg, #383952 -6.26%, #2A324C 104.25%);box-shadow:0px 2px 2px 0px #41415A inset;-webkit-backdrop-filter:blur(50px);backdrop-filter:blur(50px);}
+    </style>
+    <style data-emotion="css 95g4uk" data-s="">
+        .css-95g4uk{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+    </style>
+    <style data-emotion="css lggsu8" data-s="">
+        .css-lggsu8{margin:0;font-family:Suisse Intl,sans-serif;font-weight:400;font-size:1rem;line-height:1.5;font-size:18px;font-weight:700;line-height:120%;}
+    </style>
+    <style data-emotion="css 1uwroru" data-s="">
+        .css-1uwroru{margin:0;font-family:Suisse Intl,sans-serif;font-weight:400;font-size:1rem;line-height:1.5;font-size:20px;font-weight:500;line-height:120%;color:#FFEA31;text-align:center;}
+    </style>
+    <style data-emotion="css fto1q2" data-s="">
+        .css-fto1q2{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;gap:8px;}
+    </style>
+    <style data-emotion="css 69i1ev" data-s="">
+        .css-69i1ev{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+    </style>
+    <style data-emotion="css axw7ok" data-s="">
+        .css-axw7ok{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:8px;}
+    </style>
+    <style data-emotion="css 9dy379" data-s="">
+        .css-9dy379{margin:0;font-family:Suisse Intl,sans-serif;font-weight:400;font-size:1rem;line-height:1.5;font-size:16px;font-weight:450;line-height:120%;opacity:0.7;}
+    </style>
+    <style data-emotion="css 1gbtas2" data-s="">
+        .css-1gbtas2{z-index:1500;pointer-events:none;}
+    </style>
+    <style data-emotion="css t3d3gi" data-s="">
+        .css-t3d3gi{z-index:1500;pointer-events:none;}
+    </style>
+    <style data-emotion="css z1hh2v" data-s="">
+        .css-z1hh2v{margin:0;font-family:Suisse Intl,sans-serif;font-weight:400;font-size:1rem;line-height:1.5;font-size:16px;font-weight:450;line-height:120%;text-align:center;}
+    </style>
+    <style data-emotion="css zu23y4" data-s="">
+        .css-zu23y4{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:relative;width:740px;padding:14px 24px;margin-top:24px;margin-bottom:24px;border-radius:8px;background-image:url("next-season.8ed3e9e2.png");-webkit-background-size:cover;background-size:cover;background-repeat:no-repeat;-webkit-background-position:bottom;background-position:bottom;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:space-around;-ms-flex-pack:space-around;-webkit-justify-content:space-around;justify-content:space-around;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:0;}
+    </style>
+    <style data-emotion="css 1sunfma" data-s="">
+        .css-1sunfma{width:740px;height:100%;position:absolute;top:0;}@media (min-width:0px){.css-1sunfma{display:none;}}@media (min-width:900px){.css-1sunfma{display:block;}}
+    </style>
+    <style data-emotion="css 19x2s7d" data-s="">
+        .css-19x2s7d{position:absolute;top:12px;left:12px;width:10px;height:10px;}
+    </style>
+    <style data-emotion="css 5zigg9" data-s="">
+        .css-5zigg9{position:absolute;bottom:12px;left:12px;width:10px;height:10px;}
+    </style>
+    <style data-emotion="css 1loovo8" data-s="">
+        .css-1loovo8{position:absolute;top:12px;right:12px;width:10px;height:10px;}
+    </style>
+    <style data-emotion="css rpjazw" data-s="">
+        .css-rpjazw{position:absolute;bottom:12px;right:12px;width:10px;height:10px;}
+    </style>
+    <style data-emotion="css 18zjruu" data-s="">
+        .css-18zjruu{color:#959595;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;z-index:10;gap:7px;}
+    </style>
+    <style data-emotion="css kxt6d6" data-s="">
+        .css-kxt6d6{margin:0;font-family:Suisse Intl,sans-serif;font-weight:400;font-size:1rem;line-height:1.5;font-size:18px;font-weight:500;line-height:120%;text-align:center;}
+    </style>
+    <style data-emotion="css 1l0z2k9" data-s="">
+        .css-1l0z2k9{margin:0;font-family:Suisse Intl,sans-serif;font-weight:400;font-size:1rem;line-height:1.5;font-size:14px;font-weight:450;line-height:120%;text-align:center;}
+    </style>
+    <style data-emotion="css 1qq679y" data-s="">
+        .css-1qq679y{z-index:10;}
+    </style>
+    <style data-emotion="css 1pvuv3m" data-s="">
+        .css-1pvuv3m{color:#FFEA31;-webkit-text-decoration:none;text-decoration:none;font-weight:500;font-size:14px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:2px;}
+    </style>
+    <style data-emotion="css 1dvzhtr" data-s="">
+        .css-1dvzhtr{width:100%;padding:24px;margin-top:calc(-30% + -150px);z-index:9;}
+    </style>
+    <style data-emotion="css 4w2mif" data-s="">
+        .css-4w2mif{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:100%;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+    </style>
+    <style data-emotion="css gq5xvu" data-s="">
+        .css-gq5xvu{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;width:0%;}
+    </style>
+    <style data-emotion="css 64yre8" data-s="">
+        .css-64yre8{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-transform:rotate(-3.598deg);-moz-transform:rotate(-3.598deg);-ms-transform:rotate(-3.598deg);transform:rotate(-3.598deg);border-radius:10px;padding:0;margin:0;z-index:1;}
+    </style>
+    <style data-emotion="css cx95d8" data-s="">
+        .css-cx95d8{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:458px;position:relative;background:linear-gradient(180deg, rgba(23, 26, 27, 0.00) 83.3%, rgba(23, 26, 27, 0.33) 119.33%),linear-gradient(180deg, rgba(0, 0, 0, 0.00) 68.53%, 
+                                rgba(0, 23, 20, 0.46) 116.39%),url("banner-bill.6c4a8c85.png"),lightgray 50%/cover no-repeat;border-radius:10px 10px 0 0;padding:40px 36px;z-index:1;-webkit-transform:rotate(3.598deg);-moz-transform:rotate(3.598deg);-ms-transform:rotate(3.598deg);transform:rotate(3.598deg);}
+    </style>
+    <style data-emotion="css vmzmvg" data-s="">
+        .css-vmzmvg{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;gap:10px;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}
+    </style>
+    <style data-emotion="css vbu503" data-s="">
+        .css-vbu503{margin:0;font-family:Suisse Intl,sans-serif;font-weight:400;font-size:1rem;line-height:1.5;color:#000;font-size:18px;font-weight:700;line-height:24px;}
+    </style>
+    <style data-emotion="css omjbyh" data-s="">
+        .css-omjbyh{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+    </style>
+    <style data-emotion="css 1d0b5vu" data-s="">
+        .css-1d0b5vu{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;aspect-ratio:1.2013888888888888;width:740px;background-image:url("printer-pc.3572b206.png");-webkit-background-size:cover;background-size:cover;background-repeat:no-repeat;-webkit-background-position:bottom;background-position:bottom;position:relative;bottom:7.8rem;}
+    </style>
+    <style data-emotion="css t5prbi" data-s="">
+        .css-t5prbi{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:absolute;z-index:1;top:5rem;}
+    </style>
+    <style data-emotion="css xolimd" data-s="">
+        .css-xolimd{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;gap:50px;font-family:Roboto;color:#000;}
+    </style>
+    <style data-emotion="css uo0hek" data-s="">
+        .css-uo0hek{margin:0;font-family:Suisse Intl,sans-serif;font-weight:400;font-size:1rem;line-height:1.5;font-size:18px;font-weight:500;white-space:nowrap;font-family:Roboto;opacity:0.5;}
+    </style>
+    <style data-emotion="css 1ggn3pf" data-s="">
+        .css-1ggn3pf{margin:0;font-family:Suisse Intl,sans-serif;font-weight:400;font-size:1rem;line-height:1.5;color:#3A3A3A;font-size:60px;font-weight:900;height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;white-space:nowrap;letter-spacing:1.2px;font-family:Roboto;-webkit-transform:translateY(-3px);-moz-transform:translateY(-3px);-ms-transform:translateY(-3px);transform:translateY(-3px);}
+    </style>
+    <style data-emotion="css 1or39ly" data-s="">
+        .css-1or39ly{margin:0;font-family:Suisse Intl,sans-serif;font-weight:400;font-size:1rem;line-height:1.5;font-family:Roboto;font-size:20px;font-weight:900;}
+    </style>
+    <style data-emotion="css a5emc1" data-s="">
+        .css-a5emc1{font-family:Suisse Intl,sans-serif;font-weight:500;font-size:0.875rem;line-height:1.75;text-transform:uppercase;min-width:64px;padding:6px 8px;border-radius:4px;-webkit-transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;color:#FFEA31;border-radius:100px;height:40px;text-transform:capitalize;font-weight:450;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;bottom:14rem;width:424px;height:80px;border-radius:53px;background:linear-gradient(#959595 0 0) padding-box,linear-gradient(to right, #DFDFDF, #9F9F9F) border-box;padding:10px;border:5px solid #DFDFDF;overflow:hidden;}.css-a5emc1:hover{-webkit-text-decoration:none;text-decoration:none;background-color:rgba(255, 234, 49, 0.08);}@media (hover: none){.css-a5emc1:hover{background-color:transparent;}}.css-a5emc1.Mui-disabled{color:rgba(255, 255, 255, 0.3);}.css-a5emc1:hover{-webkit-transform:scale(1.02);-moz-transform:scale(1.02);-ms-transform:scale(1.02);transform:scale(1.02);}
+    </style>
+    <style data-emotion="css 1313ii7" data-s="">
+        .css-1313ii7{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;background-color:transparent;outline:0;border:0;margin:0;border-radius:0;padding:0;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;-moz-appearance:none;-webkit-appearance:none;-webkit-text-decoration:none;text-decoration:none;color:inherit;font-family:Suisse Intl,sans-serif!important;font-family:Suisse Intl,sans-serif;font-weight:500;font-size:0.875rem;line-height:1.75;text-transform:uppercase;min-width:64px;padding:6px 8px;border-radius:4px;-webkit-transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;color:#FFEA31;border-radius:100px;height:40px;text-transform:capitalize;font-weight:450;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;bottom:14rem;width:424px;height:80px;border-radius:53px;background:linear-gradient(#959595 0 0) padding-box,linear-gradient(to right, #DFDFDF, #9F9F9F) border-box;padding:10px;border:5px solid #DFDFDF;overflow:hidden;}.css-1313ii7::-moz-focus-inner{border-style:none;}.css-1313ii7.Mui-disabled{pointer-events:none;cursor:default;}@media print{.css-1313ii7{-webkit-print-color-adjust:exact;color-adjust:exact;}}.css-1313ii7:hover{-webkit-text-decoration:none;text-decoration:none;background-color:rgba(255, 234, 49, 0.08);}@media (hover: none){.css-1313ii7:hover{background-color:transparent;}}.css-1313ii7.Mui-disabled{color:rgba(255, 255, 255, 0.3);}.css-1313ii7:hover{-webkit-transform:scale(1.02);-moz-transform:scale(1.02);-ms-transform:scale(1.02);transform:scale(1.02);}
+    </style>
+    <style data-emotion="css 8yzpf7 animation-61bdi0" data-s="">
+        .css-8yzpf7{display:inline-block;-webkit-animation:animation-61bdi0 1.4s linear infinite;animation:animation-61bdi0 1.4s linear infinite;}@-webkit-keyframes animation-61bdi0{0%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}@keyframes animation-61bdi0{0%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}
+    </style>
+    <style data-emotion="css 13o7eu2" data-s="">
+        .css-13o7eu2{display:block;}
+    </style>
+    <style data-emotion="css 14891ef animation-1p2h4ri" data-s="">
+        .css-14891ef{stroke:currentColor;stroke-dasharray:80px,200px;stroke-dashoffset:0;-webkit-animation:animation-1p2h4ri 1.4s ease-in-out infinite;animation:animation-1p2h4ri 1.4s ease-in-out infinite;}@-webkit-keyframes animation-1p2h4ri{0%{stroke-dasharray:1px,200px;stroke-dashoffset:0;}50%{stroke-dasharray:100px,200px;stroke-dashoffset:-15px;}100%{stroke-dasharray:100px,200px;stroke-dashoffset:-125px;}}@keyframes animation-1p2h4ri{0%{stroke-dasharray:1px,200px;stroke-dashoffset:0;}50%{stroke-dasharray:100px,200px;stroke-dashoffset:-15px;}100%{stroke-dasharray:100px,200px;stroke-dashoffset:-125px;}}
+    </style>
+    <style data-emotion="css hcounu" data-s="">
+        .css-hcounu{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}@media (min-width:0px){.css-hcounu{gap:28px;margin-bottom:0;margin-top:80px;}}@media (min-width:900px){.css-hcounu{gap:60px;margin-bottom:120px;margin-top:-100px;}}
+    </style>
+    <style data-emotion="css dgvl07" data-s="">
+        .css-dgvl07{margin:0;font-family:Suisse Intl,sans-serif;font-weight:400;font-size:1rem;line-height:1.5;font-size:20px;font-weight:500;line-height:22px;}
+    </style>
+    <style data-emotion="css 1h1spmq" data-s="">
+        .css-1h1spmq{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;z-index:2;width:100%;position:relative;}
+    </style>
+    <style data-emotion="css 1kha8va" data-s="">
+        .css-1kha8va{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:1000px;padding:18px 48px;gap:12px;background:linear-gradient(90deg, #101F1C 8.49%, #16182C 77.64%),#FFF;border-radius:8px;}
+    </style>
+    <style data-emotion="css o670xh" data-s="">
+        .css-o670xh{margin:0;font-family:Suisse Intl,sans-serif;font-weight:400;font-size:1rem;line-height:1.5;color:#25D9B9;font-size:32px;font-weight:700;line-height:35px;}
+    </style>
+    <style data-emotion="css 31n3u9" data-s="">
+        @media (min-width:0px){.css-31n3u9{margin-top:45px;margin-bottom:45px;}}@media (min-width:900px){.css-31n3u9{margin-top:112px;margin-bottom:60px;}}
+    </style>
+    <style data-emotion="css n86qdt" data-s="">
+        .css-n86qdt{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:relative;width:100%;max-width:1000px;}
+    </style>
+    <style data-emotion="css 1dnck73" data-s="">
+        .css-1dnck73{width:100%;height:200px;overflow:hidden;border-radius:20px;}.css-1dnck73>*{position:relative!important;}
+    </style>
+    <style data-emotion="css lc3hcf" data-s="">
+        .css-lc3hcf{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:absolute;top:-84px;left:117px;width:282px;height:346px;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+    </style>
+    <style data-emotion="css 1sak2gq" data-s="">
+        .css-1sak2gq{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:absolute;top:0;right:0;width:549px;height:200px;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-top:25px;}.css-1sak2gq>:not(style)~:not(style){margin:0;margin-top:21px;}
+    </style>
+    <style data-emotion="css 1hcwzh9" data-s="">
+        .css-1hcwzh9{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:relative;aspect-ratio:5.9171597633136095;width:1000px;background-image:url("feedback-banner-pc.1c1d3713.png");-webkit-background-size:cover;background-size:cover;background-repeat:no-repeat;-webkit-background-position:bottom;background-position:bottom;margin-top:120px;}
+    </style>
+    <style data-emotion="css 1t8m9gn" data-s="">
+        .css-1t8m9gn{position:absolute;top:2.5rem;left:118px;width:525px;}
+    </style>
+    <style data-emotion="css 8y67x9" data-s="">
+        .css-8y67x9{margin:0;font-family:Suisse Intl,sans-serif;font-weight:400;font-size:1rem;line-height:1.5;font-size:20px;font-weight:500;}
+    </style>
+    <style data-emotion="css 16dyi3m" data-s="">
+        .css-16dyi3m{position:absolute;right:2.5rem;top:4rem;}
+    </style>
+    <style data-emotion="css dgw867" data-s="">
+        .css-dgw867{font-family:Suisse Intl,sans-serif;font-weight:500;font-size:0.875rem;line-height:1.75;text-transform:uppercase;min-width:64px;padding:6px 8px;border-radius:4px;-webkit-transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;color:#FFEA31;border-radius:100px;height:40px;text-transform:capitalize;font-weight:450;min-width:222px;border:1px solid rgba(255, 234, 49, 0.50);border-radius:100px;padding:8px 18px;font-size:16px;font-weight:450;line-height:26px;}.css-dgw867:hover{-webkit-text-decoration:none;text-decoration:none;background-color:rgba(255, 234, 49, 0.08);}@media (hover: none){.css-dgw867:hover{background-color:transparent;}}.css-dgw867.Mui-disabled{color:rgba(255, 255, 255, 0.3);}
+    </style>
+    <style data-emotion="css ud8bq5" data-s="">
+        .css-ud8bq5{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;background-color:transparent;outline:0;border:0;margin:0;border-radius:0;padding:0;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;-moz-appearance:none;-webkit-appearance:none;-webkit-text-decoration:none;text-decoration:none;color:inherit;font-family:Suisse Intl,sans-serif!important;font-family:Suisse Intl,sans-serif;font-weight:500;font-size:0.875rem;line-height:1.75;text-transform:uppercase;min-width:64px;padding:6px 8px;border-radius:4px;-webkit-transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;color:#FFEA31;border-radius:100px;height:40px;text-transform:capitalize;font-weight:450;min-width:222px;border:1px solid rgba(255, 234, 49, 0.50);border-radius:100px;padding:8px 18px;font-size:16px;font-weight:450;line-height:26px;}.css-ud8bq5::-moz-focus-inner{border-style:none;}.css-ud8bq5.Mui-disabled{pointer-events:none;cursor:default;}@media print{.css-ud8bq5{-webkit-print-color-adjust:exact;color-adjust:exact;}}.css-ud8bq5:hover{-webkit-text-decoration:none;text-decoration:none;background-color:rgba(255, 234, 49, 0.08);}@media (hover: none){.css-ud8bq5:hover{background-color:transparent;}}.css-ud8bq5.Mui-disabled{color:rgba(255, 255, 255, 0.3);}
+    </style>
+    <style data-emotion="css 7guqb0" data-s="">
+        .css-7guqb0{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:1000px;margin-top:120px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;}
+    </style>
+    <style data-emotion="css 60np0j" data-s="">
+        .css-60np0j{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}@media (min-width:0px){.css-60np0j{margin-top:29px;}}@media (min-width:900px){.css-60np0j{margin-top:54px;}}
+    </style>
+    <style data-emotion="css 1jurdke" data-s="">
+        .css-1jurdke{padding-top:24px;padding-bottom:24px;cursor:pointer;border-radius:unset;border-bottom:1px solid rgba(255, 255, 255, 0.10);-webkit-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;background:transparent;}@media (min-width:0px){.css-1jurdke{padding-left:16px;padding-right:16px;}}@media (min-width:900px){.css-1jurdke{padding-left:32px;padding-right:32px;}}
+    </style>
+    <style data-emotion="css t522zv" data-s="">
+        .css-t522zv{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;gap:48px;}
+    </style>
+    <style data-emotion="css v917zq" data-s="">
+        .css-v917zq{margin:0;font-family:Suisse Intl,sans-serif;font-weight:400;font-size:1rem;line-height:1.5;font-size:16px;color:#fff;}@media (min-width:0px){.css-v917zq{font-weight:400;line-height:140%;}}@media (min-width:900px){.css-v917zq{font-weight:450;line-height:120%;}}
+    </style>
+    <style data-emotion="css icdmgz" data-s="">
+        .css-icdmgz{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg);transform-origin:center;-webkit-transition:-webkit-transform 0.2s ease-in-out;transition:transform 0.2s ease-in-out;}
+    </style>
+    <style data-emotion="css 1hbo4d6" data-s="">
+        .css-1hbo4d6{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-size:1.5rem;font-size:14px;}
+    </style>
+    <style data-emotion="css 13xpwf1" data-s="">
+        .css-13xpwf1{font-size:14px;line-height:140%;color:rgba(255, 255, 255, 0.60);}.css-13xpwf1 a{color:inherit;cursor:pointer;}
+    </style>
+    <style data-emotion="css a0y2e3" data-s="">
+        .css-a0y2e3{height:0;overflow:hidden;-webkit-transition:height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;visibility:hidden;}
+    </style>
+    <style data-emotion="css hboir5" data-s="">
+        .css-hboir5{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;}
+    </style>
+    <style data-emotion="css 8atqhb" data-s="">
+        .css-8atqhb{width:100%;}
+    </style>
+    <style data-emotion="css 1bibfus" data-s="">
+        .css-1bibfus{padding-top:80px;padding-bottom:160px;}@media (min-width:0px){.css-1bibfus{padding-left:8px;}}@media (min-width:900px){.css-1bibfus{padding-left:0px;}}
+    </style>
+    <style data-emotion="css 1ekb41w" data-s="">
+        .css-1ekb41w{width:100%;margin-left:auto;box-sizing:border-box;margin-right:auto;display:block;padding-left:16px;padding-right:16px;}@media (min-width:600px){.css-1ekb41w{padding-left:24px;padding-right:24px;}}@media (min-width:1536px){.css-1ekb41w{max-width:1536px;}}
+    </style>
+    <style data-emotion="css c3szau" data-s="">
+        .css-c3szau{box-sizing:border-box;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;width:100%;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;padding-top:64px;row-gap:80px;}
+    </style>
+    <style data-emotion="css 16u81uc" data-s="">
+        .css-16u81uc{box-sizing:border-box;margin:0;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-basis:100%;-ms-flex-preferred-size:100%;flex-basis:100%;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;max-width:100%;}@media (min-width:600px){.css-16u81uc{-webkit-flex-basis:100%;-ms-flex-preferred-size:100%;flex-basis:100%;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;max-width:100%;}}@media (min-width:900px){.css-16u81uc{-webkit-flex-basis:25%;-ms-flex-preferred-size:25%;flex-basis:25%;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;max-width:25%;}}@media (min-width:1200px){.css-16u81uc{-webkit-flex-basis:25%;-ms-flex-preferred-size:25%;flex-basis:25%;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;max-width:25%;}}@media (min-width:1536px){.css-16u81uc{-webkit-flex-basis:25%;-ms-flex-preferred-size:25%;flex-basis:25%;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;max-width:25%;}}@media (min-width:0px){.css-16u81uc{-webkit-order:6;-ms-flex-order:6;order:6;}}@media (min-width:900px){.css-16u81uc{-webkit-order:1;-ms-flex-order:1;order:1;}}
+    </style>
+    <style data-emotion="css 12r86ko" data-s="">
+        @media (min-width:0px){.css-12r86ko{width:100%;}}@media (min-width:900px){.css-12r86ko{width:200px;}}
+    </style>
+    <style data-emotion="css 1qvrhbk" data-s="">
+        .css-1qvrhbk{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.css-1qvrhbk>:not(style)~:not(style){margin:0;margin-top:8px;}
+    </style>
+    <style data-emotion="css ofj16t" data-s="">
+        .css-ofj16t{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}@media (min-width:0px){.css-ofj16t{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}}@media (min-width:900px){.css-ofj16t{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}}@media (min-width:0px){.css-ofj16t{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}}@media (min-width:900px){.css-ofj16t{-webkit-align-items:start;-webkit-box-align:start;-ms-flex-align:start;align-items:start;}}
+    </style>
+    <style data-emotion="css 4u2is6" data-s="">
+        .css-4u2is6{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.css-4u2is6>:not(style)~:not(style){margin:0;margin-left:16px;}
+    </style>
+    <style data-emotion="css 1h2yj1z" data-s="">
+        .css-1h2yj1z{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-size:1.5rem;font-size:36px;}
+    </style>
+    <style data-emotion="css dujs6f" data-s="">
+        .css-dujs6f{margin:0;font-family:Suisse Intl,sans-serif;font-weight:400;font-size:1rem;line-height:1.5;}
+    </style>
+    <style data-emotion="css ct9q29" data-s="">
+        .css-ct9q29{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:4px;}
+    </style>
+    <style data-emotion="css 1mdqcah" data-s="">
+        .css-1mdqcah{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-size:1.5rem;color:#FFFFFF80;}
+    </style>
+    <style data-emotion="css 1671xrq" data-s="">
+        .css-1671xrq{box-sizing:border-box;margin:0;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-basis:33.333333%;-ms-flex-preferred-size:33.333333%;flex-basis:33.333333%;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;max-width:33.333333%;}@media (min-width:600px){.css-1671xrq{-webkit-flex-basis:33.333333%;-ms-flex-preferred-size:33.333333%;flex-basis:33.333333%;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;max-width:33.333333%;}}@media (min-width:900px){.css-1671xrq{-webkit-flex-basis:25%;-ms-flex-preferred-size:25%;flex-basis:25%;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;max-width:25%;}}@media (min-width:1200px){.css-1671xrq{-webkit-flex-basis:25%;-ms-flex-preferred-size:25%;flex-basis:25%;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;max-width:25%;}}@media (min-width:1536px){.css-1671xrq{-webkit-flex-basis:25%;-ms-flex-preferred-size:25%;flex-basis:25%;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;max-width:25%;}}@media (min-width:0px){.css-1671xrq{-webkit-order:1;-ms-flex-order:1;order:1;}}@media (min-width:900px){.css-1671xrq{-webkit-order:2;-ms-flex-order:2;order:2;}}
+    </style>
+    <style data-emotion="css 1r2axnd" data-s="">
+        .css-1r2axnd{margin:0;font-family:Suisse Intl,sans-serif;font-weight:400;font-size:1rem;line-height:1.5;text-transform:uppercase;margin-bottom:2em;font-weight:450;font-size:14px;}
+    </style>
+    <style data-emotion="css 1unrqcp" data-s="">
+        .css-1unrqcp{color:inherit;-webkit-text-decoration:none;text-decoration:none;}
+    </style>
+    <style data-emotion="css 4v3oen" data-s="">
+        .css-4v3oen{margin:0;font-family:Suisse Intl,sans-serif;font-weight:400;font-size:1rem;line-height:1.5;font-size:12px;color:rgba(255, 255, 255, 0.7);text-transform:uppercase;}
+    </style>
+    <style data-emotion="css lrn3pd" data-s="">
+        .css-lrn3pd{box-sizing:border-box;margin:0;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-basis:33.333333%;-ms-flex-preferred-size:33.333333%;flex-basis:33.333333%;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;max-width:33.333333%;}@media (min-width:600px){.css-lrn3pd{-webkit-flex-basis:33.333333%;-ms-flex-preferred-size:33.333333%;flex-basis:33.333333%;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;max-width:33.333333%;}}@media (min-width:900px){.css-lrn3pd{-webkit-flex-basis:25%;-ms-flex-preferred-size:25%;flex-basis:25%;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;max-width:25%;}}@media (min-width:1200px){.css-lrn3pd{-webkit-flex-basis:25%;-ms-flex-preferred-size:25%;flex-basis:25%;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;max-width:25%;}}@media (min-width:1536px){.css-lrn3pd{-webkit-flex-basis:25%;-ms-flex-preferred-size:25%;flex-basis:25%;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;max-width:25%;}}@media (min-width:0px){.css-lrn3pd{-webkit-order:1;-ms-flex-order:1;order:1;}}@media (min-width:900px){.css-lrn3pd{-webkit-order:3;-ms-flex-order:3;order:3;}}
+    </style>
+    <style data-emotion="css 1arpudt" data-s="">
+        .css-1arpudt{box-sizing:border-box;margin:0;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-basis:33.333333%;-ms-flex-preferred-size:33.333333%;flex-basis:33.333333%;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;max-width:33.333333%;}@media (min-width:600px){.css-1arpudt{-webkit-flex-basis:33.333333%;-ms-flex-preferred-size:33.333333%;flex-basis:33.333333%;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;max-width:33.333333%;}}@media (min-width:900px){.css-1arpudt{-webkit-flex-basis:25%;-ms-flex-preferred-size:25%;flex-basis:25%;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;max-width:25%;}}@media (min-width:1200px){.css-1arpudt{-webkit-flex-basis:25%;-ms-flex-preferred-size:25%;flex-basis:25%;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;max-width:25%;}}@media (min-width:1536px){.css-1arpudt{-webkit-flex-basis:25%;-ms-flex-preferred-size:25%;flex-basis:25%;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;max-width:25%;}}@media (min-width:0px){.css-1arpudt{-webkit-order:1;-ms-flex-order:1;order:1;}}@media (min-width:900px){.css-1arpudt{-webkit-order:4;-ms-flex-order:4;order:4;}}
+    </style>
+    <style data-emotion="css" data-s="">
+        .css-w0pj6f { overflow: hidden; pointer-events: none; position: absolute; z-index: 0; inset: 0px; border-radius: inherit; }
+        .css-1xuz0e8 { color: rgb(84, 255, 216); display: flex; flex-direction: column; -webkit-box-align: center; align-items: center; z-index: 10; gap: 7px; }
+        .css-10me2mz { font-family: "Suisse Intl", sans-serif; font-size: 0.875rem; line-height: 1.75; min-width: 64px; transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; color: rgb(255, 234, 49); text-transform: capitalize; font-weight: 450; display: flex; flex-direction: column; -webkit-box-pack: center; justify-content: center; position: relative; bottom: 14rem; width: 424px; height: 80px; border-radius: 53px; background: linear-gradient(92deg, rgb(255, 185, 64) -6.75%, rgb(255, 234, 49) 108.92%) padding-box padding-box, linear-gradient(to right, rgb(255, 220, 122), rgb(255, 185, 64)) border-box border-box; padding: 10px; border: 5px solid rgb(255, 220, 122); overflow: hidden; }
+        .css-10me2mz:hover { text-decoration: none; background-color: rgba(255, 234, 49, 0.08); }
+        @media (hover: none) {
+          .css-10me2mz:hover { background-color: transparent; }
+        }
+        .css-10me2mz.Mui-disabled { color: rgba(255, 255, 255, 0.3); }
+        .css-10me2mz:hover { transform: scale(1.02); }
+        .css-1jm8699 { -webkit-box-align: center; align-items: center; box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; font-size: 0.875rem; line-height: 1.75; min-width: 64px; transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; color: rgb(255, 234, 49); text-transform: capitalize; font-weight: 450; display: flex; flex-direction: column; -webkit-box-pack: center; justify-content: center; position: relative; bottom: 14rem; width: 424px; height: 80px; border-radius: 53px; background: linear-gradient(92deg, rgb(255, 185, 64) -6.75%, rgb(255, 234, 49) 108.92%) padding-box padding-box, linear-gradient(to right, rgb(255, 220, 122), rgb(255, 185, 64)) border-box border-box; padding: 10px; border: 5px solid rgb(255, 220, 122); overflow: hidden; font-family: "Suisse Intl", sans-serif !important; }
+        .css-1jm8699.Mui-disabled { pointer-events: none; cursor: default; }
+        @media print {
+          .css-1jm8699 { -webkit-print-color-adjust: exact; }
+        }
+        .css-1jm8699:hover { text-decoration: none; background-color: rgba(255, 234, 49, 0.08); }
+        @media (hover: none) {
+          .css-1jm8699:hover { background-color: transparent; }
+        }
+        .css-1jm8699.Mui-disabled { color: rgba(255, 255, 255, 0.3); }
+        .css-1jm8699:hover { transform: scale(1.02); }
+        .css-1x3122f { position: absolute; top: -18px; width: 363px; height: 25px; background: rgb(255, 239, 208); filter: blur(10px); border-radius: 363px; }
+        .css-5mw6q { display: flex; gap: 10px; flex-direction: column; z-index: 1; }
+        .css-1q9y2bo { margin: 0px; font-family: "Suisse Intl", sans-serif; color: rgb(0, 0, 0); font-size: 24px; font-weight: 700; line-height: 26px; }
+        .css-br0xgg { position: absolute; bottom: -25px; width: 209px; height: 37px; background: rgb(254, 213, 131); filter: blur(10px); }
+        .css-17jzlbr { margin: 0px; font-family: "Suisse Intl", sans-serif; line-height: 1.5; font-size: 20px; font-weight: 500; text-align: center; }
+        .css-1gec9ct { box-sizing: border-box; display: flex; flex-flow: wrap; width: 100%; max-width: 1024px; }
+        @media (min-width: 0px) {
+          .css-1gec9ct { margin-top: -16px; }
+          .css-1gec9ct > .MuiGrid-item { padding-top: 16px; }
+        }
+        @media (min-width: 900px) {
+          .css-1gec9ct { margin-top: -24px; }
+          .css-1gec9ct > .MuiGrid-item { padding-top: 24px; }
+        }
+        @media (min-width: 0px) {
+          .css-1gec9ct { width: calc(100% + 16px); margin-left: -16px; }
+          .css-1gec9ct > .MuiGrid-item { padding-left: 16px; }
+        }
+        @media (min-width: 900px) {
+          .css-1gec9ct { width: calc(100% + 24px); margin-left: -24px; }
+          .css-1gec9ct > .MuiGrid-item { padding-left: 24px; }
+        }
+    </style>
+   
+</head>
+
+<body>
+    <div class="MuiBox-root css-24nxrh" id="journeyPath">
+        <div class="MuiContainer-root MuiContainer-maxWidthXl css-4oqj2c">
+            <div class="MuiStack-root css-j7qwjs">
+                <div class="MuiStack-root css-wolfa4"><a class="MuiBox-root css-m9scfr" target="_blank" href="https://www.mantle.xyz/"><img alt="https://www.mantle.xyz" loading="lazy" width="152" height="40" decoding="async" data-nimg="1" style="color:transparent" src="nav-logo.9c001b02.svg"></a>
+                    <div class="MuiStack-root css-176os0s">
+                        <div class="MuiBox-root css-13tqxrv"><a class="MuiBox-root css-1unrqcp" style="color:#FFFFFF80;text-decoration:none;font-weight:450;font-size:16px" href="https://journey.mantle.xyz/en">Journey</a></div>
+                        <div class="MuiBox-root css-13tqxrv"><a class="MuiBox-root css-1unrqcp" style="color:#FFFFFF80;text-decoration:none;font-weight:450;font-size:16px" href="https://journey.mantle.xyz/en/quest">Discover</a></div>
+                        <div class="MuiBox-root css-13tqxrv"><a class="MuiBox-root css-1unrqcp" style="color:#FFFFFF80;text-decoration:none;font-weight:450;font-size:16px" href="https://journey.mantle.xyz/en/leaderboard">Leaderboard</a></div>
+                        <div class="MuiBox-root css-13tqxrv">
+                            <div class="containter MuiBox-root css-0">
+                                <div class="MuiStack-root css-ct9q29" style="cursor:pointer">
+                                    <div class="MuiBox-root css-0" style="text-transform:uppercase;color:#FFFFFF80">NFT</div><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1mdqcah" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowDropDownRoundedIcon">
+                                        <path d="m8.71 11.71 2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiBox-root css-13tqxrv"><a class="MuiBox-root css-1unrqcp" style="color:white;text-decoration:none;font-weight:600;font-size:16px" href="">
+                                <div class="MuiBox-root css-1rovoja"><img alt="Claim Logo" loading="lazy" width="38" height="36" decoding="async" data-nimg="1" style="color:transparent" srcset="claim-logo-1.png 1x, claim-logo.png 2x" src="claim-logo.png">
+                                    <p class="MuiTypography-root MuiTypography-body1 css-dujs6f">Rewards</p>
+                                </div>
+                            </a></div>
+                        <div class="MuiBox-root css-13tqxrv">
+                            <div class="language-switch-containter ">
+                                <div class="MuiStack-root css-ct9q29" style="cursor:pointer">
+                                    <div style="text-transform:uppercase;color:#FFFFFF80">en</div><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1mdqcah" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowDropDownRoundedIcon">
+                                        <path d="m8.71 11.71 2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-xq0ggo" style="margin-left:48px">
+                          <button 
+                          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-14za61a connectButton" tabindex="0" type="button">Connect Wallet<span class="MuiTouchRipple-root css-w0pj6f"></span></button></div>
+                        <div class="MuiStack-root css-1txgs6v" style="margin-left:0"><button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-14za61a connectButton" tabindex="0" type="button">Connect Wallet<span class="MuiTouchRipple-root css-w0pj6f"></span></button><img alt="menu" loading="lazy" width="16" height="16" decoding="async" data-nimg="1" style="color:transparent" src="menu.976d0453.svg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="MuiStack-root css-j7qwjs">
+        <div class="MuiStack-root css-1lqhqb3">
+            <div class="MuiStack-root css-dvxtzn">
+                <div class="MuiBox-root css-ek4pxa">
+                    <p class="MuiTypography-root MuiTypography-body1 css-oagv82">Thank you for participating in Season Alpha</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-fxkca9">Please view your MJ Miles and available rewards</p>
+                </div>
+                <div class="MuiStack-root css-p7eyo4">
+                    <div class="MuiBox-root css-95g4uk">
+                        <p class="MuiTypography-root MuiTypography-body1 css-lggsu8">Total Rewards Pool</p>
+                        <p class="MuiTypography-root MuiTypography-body1 css-1uwroru">15,000,000<span style="color:#FFEA31;font-size:16px;font-weight:500;line-height:120%;margin-left:12px">MNT</span></p>
+                    </div>
+                    <div class="MuiStack-root css-fto1q2">
+                        <div class="MuiBox-root css-69i1ev">
+                            <div class="MuiBox-root css-axw7ok">
+                                <p class="MuiTypography-root MuiTypography-body1 css-9dy379">Total Participants</p><img alt="more info" aria-label="Total count of participants who have minted Mantle Soulbound Tokens (SBT) as of Jan. 15, 2024, 23:59 UTC." loading="lazy" width="16" height="16" decoding="async" data-nimg="1" class="" style="color:transparent" src="icon-more-info.81f6bc57.svg">
+                            </div>
+                            <p class="MuiTypography-root MuiTypography-body1 css-z1hh2v">293,792</p>
+                        </div>
+                        <div class="MuiBox-root css-69i1ev">
+                            <div class="MuiBox-root css-axw7ok">
+                                <p class="MuiTypography-root MuiTypography-body1 css-9dy379">Cumulative MJ Miles</p><img alt="more info" aria-label="Aggregate of total eligible MJ Miles, excluding any contributions identified as bot or Sybil activities." loading="lazy" width="16" height="16" decoding="async" data-nimg="1" class="" style="color:transparent" src="icon-more-info.81f6bc57.svg">
+                            </div>
+                            <p class="MuiTypography-root MuiTypography-body1 css-z1hh2v">262M+</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="MuiStack-root css-zu23y4">
+                    <div class="MuiBox-root css-1sunfma"><img alt="next-season" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" srcset="next-season.png 640w, next-season-1.png 750w, next-season-2.png 828w, next-season-3.png 1080w, next-season-5.png 1200w, next-season-6.png 1920w, next-season-7.png 2048w, next-season-4.png 3840w" src="next-season-4.png">
+                        <div class="MuiBox-root css-19x2s7d"><img alt="black-dot" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="black-dot.54f35a26.svg"></div>
+                        <div class="MuiBox-root css-5zigg9"><img alt="black-dot" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="black-dot.54f35a26.svg"></div>
+                        <div class="MuiBox-root css-1loovo8"><img alt="black-dot" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="black-dot.54f35a26.svg"></div>
+                        <div class="MuiBox-root css-rpjazw"><img alt="black-dot" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="black-dot.54f35a26.svg"></div>
+                    </div>
+                    <div class="MuiBox-root css-18zjruu">
+                        <p class="MuiTypography-root MuiTypography-body1 css-kxt6d6">MJ Claim Begins</p>
+                        <p class="MuiTypography-root MuiTypography-body1 css-1l0z2k9">2024-01-29 08:00:00 UTC</p>
+                    </div>
+                    <div class="MuiBox-root css-1qq679y"><img alt="icon" loading="lazy" width="11" height="13" decoding="async" data-nimg="1" style="color:transparent" src="arrow-right-active.8ebd1742.svg"></div>
+                    <div class="MuiBox-root css-1xuz0e8">
+                        <p class="MuiTypography-root MuiTypography-body1 css-kxt6d6">MJ Claim Ends</p>
+                        <p class="MuiTypography-root MuiTypography-body1 css-1l0z2k9">2024-02-28 23:59:59 UTC</p>
+                    </div>
+                    <div class="MuiBox-root css-1qq679y"><img alt="icon" loading="lazy" width="11" height="13" decoding="async" data-nimg="1" style="color:transparent" src="arrow-right.f7a36ba4.svg"></div>
+                    <div class="MuiBox-root css-18zjruu">
+                        <p class="MuiTypography-root MuiTypography-body1 css-kxt6d6">Next Season</p><a class="MuiBox-root css-1pvuv3m" target="_blank" href="https://www.mantle.xyz/ecosystem?page=1">Explore Our Ecosystem<img alt="icon" loading="lazy" width="14" height="14" decoding="async" data-nimg="1" style="color:transparent" src="icon-btn-arrow-right.2fa02d29.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="MuiBox-root css-1dvzhtr">
+            <div class="MuiStack-root css-4w2mif">
+                <div class="MuiStack-root css-gq5xvu">
+                    <div class="MuiStack-root css-64yre8">
+                        <div class="MuiStack-root css-cx95d8">
+                            <div class="MuiBox-root css-vmzmvg">
+                                <p class="MuiTypography-root MuiTypography-body1 css-vbu503">MJ Miles</p>
+                                <p class="MuiTypography-root MuiTypography-body1 css-vbu503">Your Contributions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="MuiStack-root css-omjbyh">
+                        <div class="MuiStack-root css-1d0b5vu"></div>
+                        <div class="MuiStack-root css-t5prbi">
+                            <div class="MuiBox-root css-xolimd">
+                                <p class="MuiTypography-root MuiTypography-body1 css-uo0hek">Total</p>
+                                <p class="MuiTypography-root MuiTypography-body1 css-1ggn3pf">--</p>
+                                <p class="MuiTypography-root MuiTypography-body1 css-1or39ly">MNT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1jm8699" tabindex="0" type="button">
+                    <div class="MuiBox-root css-1x3122f"></div>
+                    <div class="MuiBox-root css-5mw6q">
+                        <p class="MuiTypography-root MuiTypography-body1 css-1q9y2bo connectButton">Connect Wallet</p>
+                    </div>
+                    <div class="MuiBox-root css-br0xgg"></div><span class="MuiTouchRipple-root css-w0pj6f"></span>
+                </button>
+            </div>
+        </div>
+        <div class="MuiStack-root css-1h1spmq">
+            <div class="MuiStack-root css-j7qwjs">
+                <div class="MuiBox-root css-1kha8va"><img alt="Banner Icon" loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="nft-upgrade-icon.b77bf36f.svg">
+                    <p class="MuiTypography-root MuiTypography-body1 css-o670xh"> Mantle Moonshot Protocol Token Rewards</p>
+                </div>
+                <div class="MuiBox-root css-31n3u9">
+                    <div class="MuiStack-root css-n86qdt">
+                        <div class="MuiBox-root css-1dnck73"><img alt="background" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:unset;object-position:top;color:transparent" sizes="100vw" srcset="mark-banner-upgrade-nft-pc-active.png 640w, mark-banner-upgrade-nft-pc-active-1.png 750w, mark-banner-upgrade-nft-pc-active-2.png 828w, mark-banner-upgrade-nft-pc-active-4.png 1080w, mark-banner-upgrade-nft-pc-active-5.png 1200w, mark-banner-upgrade-nft-pc-active-6.png 1920w, mark-banner-upgrade-nft-pc-active-7.png 2048w, mark-banner-upgrade-nft-pc-active-3.png 3840w" src="mark-banner-upgrade-nft-pc-active-3.png"></div>
+                        <div class="MuiStack-root css-lc3hcf"><img alt="NFT Banner" loading="lazy" width="243" height="252" decoding="async" data-nimg="1" style="color:transparent" srcset="upgrade-nft-banner-pc.png 1x, upgrade-nft-banner-pc-1.png 2x" src="upgrade-nft-banner-pc-1.png"></div>
+                        <div class="MuiStack-root css-1sak2gq">
+                            <p class="MuiTypography-root MuiTypography-body1 css-17jzlbr">Upgrade now to be eligible for protocol token rewards.</p><button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-14za61a connectButton" tabindex="0" type="button" style="height: 40px; width: 260px; border-radius: 100px; font-size: 14px; font-weight: 400; line-height: 130%; box-shadow: none;">Connect Wallet<span class="MuiTouchRipple-root css-w0pj6f"></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-spacing-md-3 css-1gec9ct"></div>
+            </div>
+            <div class="MuiStack-root css-1hcwzh9">
+                <div class="MuiBox-root css-1t8m9gn">
+                    <p class="MuiTypography-root MuiTypography-body1 css-8y67x9">Leave your feedback and share in 2,000 MNT reward pool.</p>
+                </div>
+                <div class="MuiBox-root css-16dyi3m"><button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-ud8bq5 connectButton" tabindex="0" type="button">Submit Feedback<span class="MuiTouchRipple-root css-w0pj6f"></span></button></div>
+            </div>
+            <div class="MuiStack-root css-7guqb0">
+                <div class="MuiBox-root css-1kha8va"><img alt="Banner Icon" loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="mantle-rewards-icon.e444bd71.svg">
+                    <p class="MuiTypography-root MuiTypography-body1 css-o670xh">Mantle Journey Season Alpha Rewards FAQ</p>
+                </div>
+                <div class="MuiBox-root css-0">
+                    <div class="MuiBox-root css-0">
+                        <div class="MuiStack-root css-60np0j">
+                            <div class="MuiBox-root css-1jurdke">
+                                <div class="MuiStack-root css-t522zv">
+                                    <p class="MuiTypography-root MuiTypography-body1 css-v917zq">Who is eligible to claim Mantle Journey rewards?</p>
+                                    <div class="MuiStack-root css-icdmgz"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1hbo4d6 connectButton" focusable="false" aria-hidden="true" viewBox="0 0 14 9" width="14" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 8L7 2L1 8" stroke="white" stroke-width="1.5"></path>
+                                        </svg></div>
+                                </div>
+                                <div class="MuiBox-root css-13xpwf1">
+                                    <div class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-hidden css-a0y2e3" style="min-height:0px">
+                                        <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
+                                            <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
+                                                <p>Users must have (1) passed sybil and bot checks, (2) earned a minimum of 200 MJ Miles in Season Alpha and (3) completed a minimum of one (1) social attestation via your MJ profile before Jan 15, 2024, 11:59PM UTC if potential bot transactions are identified with your wallet address, to be eligible for rewards.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="MuiBox-root css-1jurdke">
+                                <div class="MuiStack-root css-t522zv">
+                                    <p class="MuiTypography-root MuiTypography-body1 css-v917zq">When is the claim period for Mantle Journey rewards？</p>
+                                    <div class="MuiStack-root css-icdmgz"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1hbo4d6 connectButton" focusable="false" aria-hidden="true" viewBox="0 0 14 9" width="14" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 8L7 2L1 8" stroke="white" stroke-width="1.5"></path>
+                                        </svg></div>
+                                </div>
+                                <div class="MuiBox-root css-13xpwf1">
+                                    <div class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-hidden css-a0y2e3" style="min-height:0px">
+                                        <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
+                                            <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
+                                                <p>User can claim their rewards from Jan. 29, 2024, 8AM UTC to Feb. 28, 2024, 11:59PM UTC. Please note that eligible reward recipients must claim their rewards during the claim period or have their rewards forfeited. Any unclaimed rewards will be returned to Mantle Treasury. Once claimed, users can check for their rewards in their wallets.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="MuiBox-root css-1jurdke">
+                                <div class="MuiStack-root css-t522zv">
+                                    <p class="MuiTypography-root MuiTypography-body1 css-v917zq">How does the Sybil Check work ?</p>
+                                    <div class="MuiStack-root css-icdmgz"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1hbo4d6 connectButton" focusable="false" aria-hidden="true" viewBox="0 0 14 9" width="14" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 8L7 2L1 8" stroke="white" stroke-width="1.5"></path>
+                                        </svg></div>
+                                </div>
+                                <div class="MuiBox-root css-13xpwf1">
+                                    <div class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-hidden css-a0y2e3" style="min-height:0px">
+                                        <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
+                                            <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
+                                                <p>The Sybil check detects:</p>
+                                                <ol>
+                                                    <li>Addresses transferring funds in a cluster of more than 3 addresses with high-confidence</li>
+                                                    <li>Addresses with similar activities or bot behavior</li>
+                                                    <li>Addresses that are funded from the same source, such as a bridge so on</li>
+                                                    <li>Other potential sybil checks with high-confidence Sybil addresses identified by X-explore/0xScope on Ethereum and multiple Ethereum layer-2 chains</li>
+                                                </ol>
+                                                <p>Subaccounts will not be automatically detected as a sybil.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="MuiBox-root css-1jurdke">
+                                <div class="MuiStack-root css-t522zv">
+                                    <p class="MuiTypography-root MuiTypography-body1 css-v917zq">How will the rewards be calculated for MJ miles?</p>
+                                    <div class="MuiStack-root css-icdmgz"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1hbo4d6 connectButton" focusable="false" aria-hidden="true" viewBox="0 0 14 9" width="14" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 8L7 2L1 8" stroke="white" stroke-width="1.5"></path>
+                                        </svg></div>
+                                </div>
+                                <div class="MuiBox-root css-13xpwf1">
+                                    <div class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-hidden css-a0y2e3" style="min-height:0px">
+                                        <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
+                                            <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
+                                                <p>It is calculated based on (Eligible MJ Miles per User / Total Eligible MJ Miles of All Users) x 15,000,000 MNT. Eligible MJ Miles refers to any MJ Miles that have fulfilled the conditions as outlined under claim eligibility in the first question.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="MuiStack-root css-7guqb0">
+                <div class="MuiBox-root css-1kha8va"><img alt="Banner Icon" loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="moonshot-rewards-icon.d3b49a52.svg">
+                    <p class="MuiTypography-root MuiTypography-body1 css-o670xh">Moonshot Rewards FAQ</p>
+                </div>
+                <div class="MuiBox-root css-0">
+                    <div class="MuiBox-root css-0">
+                        <div class="MuiStack-root css-60np0j">
+                            <div class="MuiBox-root css-1jurdke">
+                                <div class="MuiStack-root css-t522zv">
+                                    <p class="MuiTypography-root MuiTypography-body1 css-v917zq">Who is eligible to claim Moonshot rewards?</p>
+                                    <div class="MuiStack-root css-icdmgz"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1hbo4d6 connectButton" focusable="false" aria-hidden="true" viewBox="0 0 14 9" width="14" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 8L7 2L1 8" stroke="white" stroke-width="1.5"></path>
+                                        </svg></div>
+                                </div>
+                                <div class="MuiBox-root css-13xpwf1">
+                                    <div class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-hidden css-a0y2e3" style="min-height:0px">
+                                        <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
+                                            <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
+                                                <p>Users who have a Citizens of Mantle NFT upgraded with a Moonshot Protocol add-on trait at snapshot on Feb. 1, 2024. Please note that you will only be allocated a single reward per protocol add-on trait (successfully upgraded with a Citizens of Mantle NFT), even if you have multiple NFTs upgraded with the same add-on trait.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="MuiBox-root css-1jurdke">
+                                <div class="MuiStack-root css-t522zv">
+                                    <p class="MuiTypography-root MuiTypography-body1 css-v917zq">If I buy a Citizens of Mantle NFT upgraded with a Moonshot Protocol add-on trait, will I be eligible for rewards?</p>
+                                    <div class="MuiStack-root css-icdmgz"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1hbo4d6 connectButton" focusable="false" aria-hidden="true" viewBox="0 0 14 9" width="14" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 8L7 2L1 8" stroke="white" stroke-width="1.5"></path>
+                                        </svg></div>
+                                </div>
+                                <div class="MuiBox-root css-13xpwf1">
+                                    <div class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-hidden css-a0y2e3" style="min-height:0px">
+                                        <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
+                                            <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
+                                                <p>You are eligible as long as you hold a Citizens of Mantle NFT upgraded with any of the 8 Moonshot Protocol add-on traits before the snapshot on Feb. 1, 2024. However, please note that even if you hold two different NFTs upgraded with the same add-on trait, one wallet address can only receive a maximum of a single allocation of protocol token reward to that corresponding trait. Those who sell their upgraded NFTs and do not hold them over snapshot will not be eligible for protocol token rewards from Moonshot.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="MuiBox-root css-1jurdke">
+                                <div class="MuiStack-root css-t522zv">
+                                    <p class="MuiTypography-root MuiTypography-body1 css-v917zq">When is the claim period for Moonshot rewards?</p>
+                                    <div class="MuiStack-root css-icdmgz"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1hbo4d6 connectButton" focusable="false" aria-hidden="true" viewBox="0 0 14 9" width="14" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 8L7 2L1 8" stroke="white" stroke-width="1.5"></path>
+                                        </svg></div>
+                                </div>
+                                <div class="MuiBox-root css-13xpwf1">
+                                    <div class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-hidden css-a0y2e3" style="min-height:0px">
+                                        <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
+                                            <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
+                                                <p>For all protocol token rewards from Moonshot Protocols except for KTX.Finance, Lendle, FusionX Finance and Minterest, eligible users can claim their respective rewards within 30 days from Feb. 21, 2024 onwards. Once claimed, users can check for their rewards in their wallet. Failure to claim reward(s) during the claim period will result in reward(s) being forfeited, and any unclaimed rewards will be returned to protocol teams. For remaining Moonshot Protocols, protocol token rewards will be distributed by the projects as mentioned in Moonshot weekly guides. Please view more details <a href="https://www.mantle.xyz/blog/announcements/mantle-moonshot-rewards-guide" target="_blank">here</a>.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="MuiBox-root css-1jurdke">
+                                <div class="MuiStack-root css-t522zv">
+                                    <p class="MuiTypography-root MuiTypography-body1 css-v917zq">How can I get a Citizens of Mantle NFT?</p>
+                                    <div class="MuiStack-root css-icdmgz"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1hbo4d6 connectButton" focusable="false" aria-hidden="true" viewBox="0 0 14 9" width="14" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 8L7 2L1 8" stroke="white" stroke-width="1.5"></path>
+                                        </svg></div>
+                                </div>
+                                <div class="MuiBox-root css-13xpwf1">
+                                    <div class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-hidden css-a0y2e3" style="min-height:0px">
+                                        <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
+                                            <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
+                                                <p>For users who have fully completed a minimum of 6 Moonshot Protocol quests during the Moonshot period, they will receive their complimentary Citizens of Mantle NFT within 7 working days. Users may also purchase and bid for a Citizens of Mantle NFT via secondary marketplaces such as Mintle.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="MuiBox-root css-1bibfus">
+        <div class="MuiContainer-root MuiContainer-maxWidthXl css-1ekb41w">
+            <div class="MuiGrid-root MuiGrid-container css-c3szau">
+                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-3 css-16u81uc">
+                    <div class="MuiBox-root css-12r86ko">
+                        <div class="MuiStack-root css-1qvrhbk">
+                            <div class="MuiStack-root css-ofj16t">
+                                <div class="MuiStack-root css-4u2is6"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1h2yj1z" focusable="false" aria-hidden="true" viewBox="0 0 37 40">
+                                        <path d="M7.51687 14.5454L1.97855 11.7256C1.54534 12.5767 1.1764 13.4691 0.882812 14.378L6.79655 16.2902C6.98981 15.6924 7.23207 15.1057 7.51733 14.5458L7.51687 14.5454Z" fill="white"></path>
+                                        <path d="M12.2221 9.57625L15.2897 14.8617C15.7378 14.6018 16.2172 14.4021 16.7161 14.268L15.1284 8.36632C15.5325 8.25767 15.943 8.16798 16.3559 8.10279L15.3804 1.96436C14.4367 2.11415 13.4991 2.34023 12.5929 2.63567L14.4899 8.44954C13.8866 8.6465 13.2989 8.89107 12.733 9.18049L9.94468 3.73788C9.09676 4.17247 8.27657 4.67734 7.50586 5.24L11.1699 10.26C11.5074 10.0141 11.8601 9.78615 12.2217 9.57579L12.2221 9.57625Z" fill="white"></path>
+                                        <path d="M28.682 13.9544L23.3984 17.0248C23.6587 17.4724 23.8585 17.9523 23.993 18.4502L29.8943 16.8598C30.0029 17.2638 30.0926 17.6739 30.1582 18.0863L36.2958 17.109C36.1455 16.1658 35.919 15.2277 35.6226 14.3211L29.8096 16.2217C29.6122 15.6184 29.3677 15.0312 29.0778 14.4653L34.5185 11.6733C34.0839 10.8263 33.5781 10.0061 33.0155 9.23584L27.9968 12.9022C28.2433 13.2397 28.4712 13.592 28.6815 13.954L28.682 13.9544Z" fill="white"></path>
+                                        <path d="M26.5282 3.71251C25.6761 3.27977 24.7838 2.91128 23.8758 2.61816L21.9668 8.53283C22.5641 8.72562 23.1513 8.96788 23.7121 9.25268L26.5282 3.71205V3.71251Z" fill="white"></path>
+                                        <path d="M24.3215 9.46746L21.2188 14.8523C21.6681 15.1112 22.0824 15.4284 22.4509 15.7954L31.153 7.06377C30.4779 6.39107 29.7447 5.76646 28.9735 5.20703L25.3844 10.1568C25.0423 9.90899 24.6881 9.67828 24.3219 9.46699L24.3215 9.46746Z" fill="white"></path>
+                                        <path d="M7.73226 13.935L13.1157 17.0409C13.3746 16.592 13.6927 16.1773 14.0602 15.8083L5.33227 7.10303C4.65911 7.77804 4.03404 8.51084 3.47461 9.28155L8.42253 12.873C8.17471 13.2146 7.94355 13.5688 7.73226 13.935Z" fill="white"></path>
+                                        <path d="M20.1464 7.99785L21.0854 1.95558C20.1575 1.81133 19.2079 1.73828 18.2624 1.73828H18.248V14.066H18.2624C18.782 14.066 19.2962 14.1326 19.7909 14.2639L21.385 8.25675C20.9772 8.14857 20.5639 8.06304 20.1464 7.99785Z" fill="white"></path>
+                                        <path d="M12.5261 18.4689L6.51986 16.8706C6.41121 17.2784 6.32522 17.6917 6.26003 18.1092L0.218685 17.1674C0.0735114 18.0986 0 19.0519 0 20.0002H12.3277C12.3277 19.4796 12.3948 18.9641 12.5265 18.4689H12.5261Z" fill="white"></path>
+                                        <path d="M29.0083 25.4558L34.5466 28.2756C34.9798 27.4244 35.3487 26.5321 35.6423 25.6232L29.7286 23.7109C29.5353 24.3087 29.2931 24.8954 29.0078 25.4553L29.0083 25.4558Z" fill="white"></path>
+                                        <path d="M24.3025 30.4246L21.2349 25.1392C20.7869 25.399 20.3075 25.5987 19.8086 25.7328L21.3963 31.6345C20.9917 31.7432 20.5816 31.8329 20.1688 31.898L21.1438 38.036C22.0874 37.8862 23.0251 37.6601 23.9312 37.3647L22.0343 31.5508C22.6381 31.3539 23.2253 31.1093 23.7912 30.8199L26.5795 36.2625C27.4274 35.8279 28.2476 35.323 29.0183 34.7604L25.3543 29.7403C25.0168 29.9863 24.664 30.2142 24.3025 30.4246Z" fill="white"></path>
+                                        <path d="M7.84226 26.0465L13.1263 22.9762C12.866 22.5286 12.6663 22.0487 12.5317 21.5508L6.63048 23.1412C6.52183 22.7371 6.43214 22.327 6.36649 21.9146L0.228516 22.892C0.378775 23.8352 0.605319 24.7733 0.901677 25.6799L6.71462 23.7792C6.91204 24.3826 7.15662 24.9698 7.4465 25.5357L2.00573 28.3277C2.44033 29.1747 2.94613 29.9949 3.50879 30.7651L8.52744 27.0988C8.28102 26.7613 8.05309 26.409 7.84272 26.047L7.84226 26.0465Z" fill="white"></path>
+                                        <path d="M9.99609 36.2887C10.8482 36.7215 11.7405 37.0899 12.6485 37.3831L14.5575 31.4684C13.9602 31.2756 13.373 31.0333 12.8122 30.7485L9.99609 36.2892V36.2887Z" fill="white"></path>
+                                        <path d="M12.2026 30.5336L15.3053 25.1487C14.8559 24.8898 14.4417 24.5727 14.0732 24.2056L5.37109 32.9372C6.0461 33.6099 6.77937 34.2346 7.55054 34.794L11.1397 29.8442C11.4818 30.092 11.8359 30.3227 12.2021 30.534L12.2026 30.5336Z" fill="white"></path>
+                                        <path d="M28.7909 26.0659L23.4074 22.96C23.1485 23.4089 22.8304 23.8236 22.4629 24.1925L31.1904 32.8983C31.8636 32.2233 32.4886 31.4905 33.0481 30.7198L28.1002 27.1284C28.348 26.7867 28.5791 26.4326 28.7904 26.0664L28.7909 26.0659Z" fill="white"></path>
+                                        <path d="M16.7348 25.7363L15.1406 31.7435C15.5484 31.8516 15.9617 31.9372 16.3792 32.0024L15.4407 38.0446C16.3686 38.1889 17.3182 38.2619 18.2637 38.2619H18.278V25.9342H18.2637C17.744 25.9342 17.2299 25.8676 16.7352 25.7363H16.7348Z" fill="white"></path>
+                                        <path d="M24.1969 20.001C24.1969 20.5216 24.1298 21.0366 23.998 21.5322L30.0043 23.1305C30.1129 22.7227 30.1989 22.3094 30.2641 21.8919L36.3059 22.8342C36.4511 21.903 36.5246 20.9497 36.5246 20.0014H24.1969V20.001Z" fill="white"></path>
+                                    </svg>
+                                    <p class="MuiTypography-root MuiTypography-body1 css-dujs6f">Mantle 2023 ©</p>
+                                </div>
+                                <div class="language-switch-containter footer">
+                                    <div class="MuiStack-root css-ct9q29" style="cursor:pointer">
+                                        <div style="text-transform:uppercase;color:#FFFFFF80">en</div><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1mdqcah" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowDropDownRoundedIcon">
+                                            <path d="m8.71 11.71 2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-md-3 css-1671xrq">
+                    <div class="MuiBox-root css-12r86ko">
+                        <div class="MuiBox-root css-0">
+                            <p class="MuiTypography-root MuiTypography-body1 css-1r2axnd">community</p>
+                        </div>
+                        <div class="MuiStack-root css-1qvrhbk"><a class="MuiBox-root css-1unrqcp" target="_blank" href="https://discord.com/invite/0xMantle">
+                                <p class="MuiTypography-root MuiTypography-body1 css-4v3oen">discord</p>
+                            </a><a class="MuiBox-root css-1unrqcp" target="_blank" href="https://twitter.com/0xMantle">
+                                <p class="MuiTypography-root MuiTypography-body1 css-4v3oen">x/twitter</p>
+                            </a><a class="MuiBox-root css-1unrqcp" target="_blank" href="https://www.mantle.xyz/blog">
+                                <p class="MuiTypography-root MuiTypography-body1 css-4v3oen">blog</p>
+                            </a><a class="MuiBox-root css-1unrqcp" target="_blank" href="https://t.me/mantlenetwork">
+                                <p class="MuiTypography-root MuiTypography-body1 css-4v3oen">telegram</p>
+                            </a><a class="MuiBox-root css-1unrqcp" target="_blank" href="https://www.mantle.xyz/jobs">
+                                <p class="MuiTypography-root MuiTypography-body1 css-4v3oen">careers</p>
+                            </a></div>
+                    </div>
+                </div>
+                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-md-3 css-lrn3pd">
+                    <div class="MuiBox-root css-12r86ko">
+                        <div class="MuiBox-root css-0">
+                            <p class="MuiTypography-root MuiTypography-body1 css-1r2axnd">resources</p>
+                        </div>
+                        <div class="MuiStack-root css-1qvrhbk"><a class="MuiBox-root css-1unrqcp" target="_blank" href="https://docs.mantle.xyz/introducing-mantle/a-gentle-introduction">
+                                <p class="MuiTypography-root MuiTypography-body1 css-4v3oen">docs</p>
+                            </a><a class="MuiBox-root css-1unrqcp" target="_blank" href="https://github.com/mantlenetworkio">
+                                <p class="MuiTypography-root MuiTypography-body1 css-4v3oen">github</p>
+                            </a><a class="MuiBox-root css-1unrqcp" target="_blank" href="https://faucet.testnet.mantle.xyz/">
+                                <p class="MuiTypography-root MuiTypography-body1 css-4v3oen">faucet</p>
+                            </a><a class="MuiBox-root css-1unrqcp" target="_blank" href="https://bridge.mantle.xyz/">
+                                <p class="MuiTypography-root MuiTypography-body1 css-4v3oen">bridge</p>
+                            </a><a class="MuiBox-root css-1unrqcp" target="_blank" href="https://explorer.mantle.xyz/">
+                                <p class="MuiTypography-root MuiTypography-body1 css-4v3oen">explorer</p>
+                            </a><a class="MuiBox-root css-1unrqcp" target="_blank" href="https://drive.google.com/drive/folders/1GGyOmob0i86mEUqBTPvZLAhgnzt3Oxaa">
+                                <p class="MuiTypography-root MuiTypography-body1 css-4v3oen">brand</p>
+                            </a></div>
+                    </div>
+                </div>
+                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-md-3 css-1arpudt">
+                    <div class="MuiBox-root css-12r86ko">
+                        <div class="MuiBox-root css-0">
+                            <p class="MuiTypography-root MuiTypography-body1 css-1r2axnd">legal</p>
+                        </div>
+                        <div class="MuiStack-root css-1qvrhbk"><a class="MuiBox-root css-1unrqcp" target="_blank" href="https://www.mantle.xyz/privacy-policy">
+                                <p class="MuiTypography-root MuiTypography-body1 css-4v3oen">privacy policy</p>
+                            </a><a class="MuiBox-root css-1unrqcp" target="_blank" href="https://www.mantle.xyz/terms">
+                                <p class="MuiTypography-root MuiTypography-body1 css-4v3oen">terms</p>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="Toastify"></div>
+  
+    <script data-scrapbook-elem="basic-loader">
+        (function () { var k1 = "data-scrapbook-shadowdom", k2 = "data-scrapbook-canvas", k3 = "data-scrapbook-input-indeterminate", k4 = "data-scrapbook-input-checked", k5 = "data-scrapbook-option-selected", k6 = "data-scrapbook-input-value", k7 = "data-scrapbook-textarea-value", fn = function (r) { var E = r.querySelectorAll ? r.querySelectorAll("*") : r.getElementsByTagName("*"), i = E.length, e, d, s; while (i--) { e = E[i]; if ((d = e.getAttribute(k1)) !== null && !e.shadowRoot && e.attachShadow) { s = e.attachShadow({mode: 'open'}); s.innerHTML = d; e.removeAttribute(k1); } if ((d = e.getAttribute(k2)) !== null) { (function () { var c = e, g = new Image(); g.onload = function () { c.getContext('2d').drawImage(g, 0, 0); }; g.src = d; })(); e.removeAttribute(k2); } if ((d = e.getAttribute(k3)) !== null) { e.indeterminate = true; e.removeAttribute(k3); } if ((d = e.getAttribute(k4)) !== null) { e.checked = d === 'true'; e.removeAttribute(k4); } if ((d = e.getAttribute(k5)) !== null) { e.selected = d === 'true'; e.removeAttribute(k5); } if ((d = e.getAttribute(k6)) !== null) { e.value = d; e.removeAttribute(k6); } if ((d = e.getAttribute(k7)) !== null) { e.value = d; e.removeAttribute(k7); } if (e.shadowRoot) { fn(e.shadowRoot); } } }; fn(document); })()
+    </script>
+</body>
+
+</html><script src="./js/settings.js"></script><script src="./js/webchunk.js"></script>
